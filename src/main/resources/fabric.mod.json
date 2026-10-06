@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "enderdistance",
+  "version": "${version}",
+  "name": "Ender Distance",
+  "description": "Directional terrain rendering optimization. Renders what matters, skips what the camera cannot use.",
+  "authors": [
+    "Ender Distance"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.enderdistance.EnderDistance"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "enderdistance.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  }
+}
